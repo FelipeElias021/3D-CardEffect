@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    color: white;
+    background-color: #d56671;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transform-style: preserve-3d ;
+    min-height: 80vh;
+    width: 30rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background: white;
+    padding: 0rem 5rem;
+}
+
+/* TOP */
+.pokemon{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon img{
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #a5c8a2, rgba(213, 102, 113, 0.75));
+}
+
+/* INFO */
+
+.info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0.5rem 0rem;
+}
+
+.info p {
+    font-size: 0.7rem;
+}
+
+.types {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type1, .type2 {
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.75s ease-out;
+}
+
+.type1 {
+    background: #f85888;
+}
+
+.type2 {
+    background: #ee99ac;
+}
+
+
+
+/*MORE*/
+
+.more {
+    margin: 2rem 0rem;
+    transition: all 0.75s ease-out;
+}
+
+.more button {
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #79ad75;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.more button:hover {
+    background: #d56671;
+    color: white;
+}
